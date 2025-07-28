@@ -8,6 +8,15 @@
 </head>
 <body>
   <div class="overlay">
+    <div class="menu-container">
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="menu-dropdown" id="gameMenu">
+    <a href="uuu.html">Space Blaster Mini</a>
+    <a href="#">🔥 BGMI Xtreme</a>
+    <a href="#">🚀 Galaxy Shooter</a>
+  </div>
+</div>
+
     <div class="profile-card">
       <img src="profile.jpg" alt="Ramesh's Photo" class="profile-img" />
       <h1>Ramesh S Hampiholi</h1>
@@ -16,6 +25,7 @@
       <div class="about">
         <h2>About Me</h2>
         <p>
+            Small developer<br>
           I'm Ramesh, currently studying BCA. I'm learning coding, Unity 3D, and building my dream of creating a papular 3D games. Future goal: job at Google International USA!
         </p>
       </div>
@@ -23,7 +33,7 @@
       <div class="skills">
         <h2>Skills</h2>
         <ul>
-          <li>C & c++ Programming</li>
+          <li>C Programming</li>
           <li>HTML, CSS</li>
            <li> JavaScript</li>
           <li>Unity 3D</li>
@@ -44,5 +54,22 @@
       </div>
     </div>
   </div>
+
+  <script>
+  function toggleMenu() {
+    var menu = document.getElementById("gameMenu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  }
+
+  // Optional: Close menu when clicked outside
+  window.addEventListener("click", function(e) {
+    const menu = document.getElementById("gameMenu");
+    const icon = document.querySelector(".menu-icon");
+    if (!menu.contains(e.target) && !icon.contains(e.target)) {
+      menu.style.display = "none";
+    }
+  });
+</script>
+
 </body>
 </html>
