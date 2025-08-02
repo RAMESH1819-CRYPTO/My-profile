@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramesh's Profile</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="projects">
+  <h2>My C Projects</h2>
+  <ul>
+    <li><a href="projects/addition.c" target="_blank">Addition of Two Numbers</a></li>
+    <li><a href="projects/fibonacci.c" target="_blank">Fibonacci Series</a></li>
+    <li><a href="projects/swap.c" target="_blank">Swapping Two Numbers</a></li>
+    <li><a href="projects/cube.c" target="_blank">Cube of a Number</a></li>
+    <li><a href="projects/divisible_by_7.c" target="_blank">Numbers Divisible by 7</a></li>
+    <li><a href="projects/factorial.c" target="_blank">Factorial Program</a></li>
+    <!-- Add more projects here -->
+  </ul>
+</div>
+</body>
+</html>
